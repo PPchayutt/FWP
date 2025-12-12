@@ -1,0 +1,53 @@
+@font-face {
+    font-family: myWebFont1;
+    /* font-style: NORMAL_OR_ITALIC; */
+    /* font-weight: NUMERIC_WEIGHT_VALUE; */
+    src: url(fonts/Mali-Regular.ttf);
+}
+
+@font-face {
+    font-family: myWebFont2;
+    /* font-style: NORMAL_OR_ITALIC; */
+    /* font-weight: NUMERIC_WEIGHT_VALUE; */
+    src: url(fonts/ChakraPetch-Regular.ttf);
+}
+
+body {
+    font-family: myWebFont1;
+    font-size: 24px;
+}
+
+h1 {
+    color: black;
+    font-family: myWebFont2;
+}
+
+h2 {
+    color: black;
+}
+
+    center {
+    margin: auto;
+    width: 90%;
+}
+
+.bgcolor {
+    background-color: lightgrey;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+img {
+    display: block;
+    border-radius: 20px;
+}
+
+td {
+    padding: 2px;
+    border-bottom: black 1px solid;
+}
+
+th {
+     padding: 2px;
+    border-bottom: black 3px solid;
+}
