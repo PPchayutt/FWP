@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    margin: 40px;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+table {
+    margin: auto;
+    width: 500px;
+    table-layout: fixed;
+}
+
+th {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    background-color: white;
+}
+
+td {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid black;
+    text-align: center;
+    height: 50px;
+}
+
+.others {
+    background-color: lightgrey;
+    color: red;
+}
