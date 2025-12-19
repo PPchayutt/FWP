@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3-3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ระบบตัดเกรด</h1>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>ลำดับ</th>
+                    <th>ชื่อ</th>
+                    <th>คะแนน</th>
+                    <th>เกรด</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+        <button onclick="calculateGrades()">คำนวณเกรด</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
