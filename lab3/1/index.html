@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3-1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2>User Registration</h2>
+        <form id="registerForm">
+            <div class="form-control">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter username">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Enter email (e.g. user@example.com)">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" placeholder="Enter phone number (e.g. 0812345678)" maxlength="10"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter password">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" placeholder="Enter password">
+                <small>Error message</small>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
