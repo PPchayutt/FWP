@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4-2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-group">
+            <label id="labelFirstname" for="fname">ชื่อ:</label>
+            <input type="text" id="fname">
+        </div>
+
+        <div class="form-group">
+            <label id="labelLastname" for="lname">นามสกุล:</label>
+            <input type="text" id="lname">
+        </div>
+
+        <div class="form-group">
+            <label id="labelCountry" for="country">ประเทศ:</label>
+            <select id="country"></select>
+        </div>
+
+        <button id="btnChangeLang" onclick="toggleLanguage()">เปลี่ยนเป็นภาษาอังกฤษ</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
