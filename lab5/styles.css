@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+.left {
+    background-color: #2196F3;
+    padding: 20px;
+    float: left;
+    width: 25%;
+}
+
+.main {
+    background-color: white;
+    padding: 20px;
+    float: left;
+    width: 50%;
+}
+
+.right {
+    background-color: #4CAF50;
+    padding: 20px;
+    float: left;
+    width: 25%;
+}
+
+@media screen and (max-width:1000px) {
+
+    .left,
+    .main,
+    .right {
+        width: 100%;
+    }
+}
