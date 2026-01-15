@@ -44,7 +44,7 @@ nav a.active {
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-    min-height: 75vh;
+    min-height: 80vh;
 }
 
 h1,
@@ -91,7 +91,7 @@ h2 {
 .btn-main {
     background-color: #E65100;
     color: white;
-    padding: 15px 30px;
+    padding: 15px 35px;
     text-decoration: none;
     border-radius: 30px;
     font-weight: bold;
