@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6</title>
+</head>
+
+<body>
+    <!-- <p id="out"></p>
+
+    <script>
+        let person = {
+            "firstname": "John",
+            "lastname": "Doe",
+            "age": 30,
+            "cars": ["Toyota", "BMW", "BVD", "Honda", "Hyndai"]
+        };
+
+        let text = person.firstname + " " + person.lastname + " is " + person.age + " years old.<br>"
+        person.cars.forEach((car) => {
+            text += " - " + car + "<br>";
+        });
+    
+        document.getElementById("out").innerHTML = text;
+    </script> -->
+
+    <div id="div1"></div>
+
+    <script>
+        function heroes(data) {
+            let text = data.squadName + "<br>";
+            text += " " + data.homeTown + "<br>";
+            data.members.forEach(member => {
+                text += " -- " + member.name + "( " + member.age + " )" + "<br>";
+            });
+
+            document.getElementById("div1").innerHTML = text;
+        }
+
+        fetch('superheroes.json')
+            .then(response => response.json())
+            .then(data => heroes(data))
+            .catch(error => console.log('error', error));
+    </script>
+</body>
+
+</html>
