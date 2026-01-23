@@ -1,0 +1,43 @@
+ body {
+     font-family: sans-serif;
+     padding: 20px;
+ }
+
+ table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 20px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ th,
+ td {
+     border: 1px solid #ddd;
+     padding: 12px;
+     text-align: left;
+     vertical-align: middle;
+ }
+
+ th {
+     background-color: #f4f4f4;
+ }
+
+ /* CSS สำหรับแถบพลัง */
+ .bar-container {
+     background-color: #e0e0e0;
+     /* พื้นหลังสีเทา */
+     width: 100%;
+     height: 20px;
+     border-radius: 5px;
+     overflow: hidden;
+ }
+
+ .bar-fill {
+     height: 100%;
+     background-color: #4CAF50;
+     /* สีแถบพลัง */
+     width: 0%;
+     /* เริ่มต้น 0% เดี๋ยวใช้ JS เติมค่า */
+     transition: width 0.5s ease;
+     /* เอฟเฟกต์เลื่อนนุ่มๆ */
+ }

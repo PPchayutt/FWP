@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Nancy Davolio",
+    "gender": "F",
+    "position": "Sales Representative",
+    "positionBar": 85,
+    "address": "507-20th Ave. E. Apt. 2A"
+  },
+  {
+    "id": 2,
+    "name": "Andrew Fuller",
+    "gender": "M",
+    "position": "Vice President",
+    "positionBar": 55,
+    "address": "908 W. Capital Way"
+  },
+  {
+    "id": 3,
+    "name": "Janet Leverling",
+    "gender": "F",
+    "position": "Sales Representative",
+    "positionBar": 80,
+    "address": "722 Moss Bay Blvd."
+  },
+  {
+    "id": 4,
+    "name": "Margaret Peacock",
+    "gender": "F",
+    "position": "Sales Representative",
+    "positionBar": 75,
+    "address": "4110 Old Redmond Rd."
+  },
+  {
+    "id": 5,
+    "name": "Steven Buchanan",
+    "gender": "M",
+    "position": "Sales Manager",
+    "positionBar": 50,
+    "address": "14 Garrett Hill"
+  },
+  {
+    "id": 6,
+    "name": "Michael Suyama",
+    "gender": "M",
+    "position": "Sales Representative",
+    "positionBar": 78,
+    "address": "Coventry House Miner Rd."
+  },
+  {
+    "id": 7,
+    "name": "Robert King",
+    "gender": "M",
+    "position": "Sales Representative",
+    "positionBar": 82,
+    "address": "Edgeham Hollow Winchester Way"
+  },
+  {
+    "id": 8,
+    "name": "Laura Callahan",
+    "gender": "F",
+    "position": "Inside Sales Coordinator",
+    "positionBar": 90,
+    "address": "4726-11th Ave. N.E."
+  },
+  {
+    "id": 9,
+    "name": "Anne Dodsworth",
+    "gender": "F",
+    "position": "Sales Representative",
+    "positionBar": 88,
+    "address": "7 Houndstooth Rd."
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 101,
+    "name": "Somchai Jaidee",
+    "position": "System Analyst",
+    "email": "somchai@company.com"
+  },
+  {
+    "id": 102,
+    "name": "Alice Wonderland",
+    "position": "UX/UI Designer",
+    "email": "alice.w@design.co"
+  },
+  {
+    "id": 103,
+    "name": "Robert Smith",
+    "position": "Developer",
+    "email": "robert.s@tech.net"
+  },
+  {
+    "id": 104,
+    "name": "Megan Fox",
+    "position": "Tester",
+    "email": "megan.fox@test.org"
+  },
+  {
+    "id": 105,
+    "name": "John Doe123",
+    "position": "Intern",
+    "email": "johndoe"
+  }
+]

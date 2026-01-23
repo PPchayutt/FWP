@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm Exam - Q2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>User Form & Validation</h1>
+
+    <div class="form-group">
+        <label>Select User:</label>
+        <select id="userSelect">
+            <option value="">-- Please Select --</option>
+        </select>
+        <button class="btn-blue" onclick="showUserInfo()" style="margin-top: 10px;">Show Info</button>
+    </div>
+
+    <hr>
+
+    <form onsubmit="return validateForm()">
+        <div class="form-group">
+            <label>Name (No numbers allowed):</label>
+            <input type="text" id="nameInput" required>
+        </div>
+
+        <div class="form-group">
+            <label>Position:</label>
+            <input type="text" id="positionInput" readonly style="background-color: #eee;">
+        </div>
+
+        <div class="form-group">
+            <label>Email (Must contain '@' and length > 5):</label>
+            <input type="text" id="emailInput" placeholder="Enter email manually">
+        </div>
+
+        <button type="submit" class="btn-green">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
