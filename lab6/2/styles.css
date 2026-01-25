@@ -1,90 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 body {
-    font-family: 'Kanit', sans-serif;
-    background-color: #f0f2f5;
+    font-family: "Sarabun", sans-serif;
+    background-color: whitesmoke;
     margin: 0;
     padding: 20px;
-    text-align: center;
 }
 
-h1 {
-    color: #333;
-    margin-bottom: 30px;
-}
-
-/* --- กล่องจัดระเบียบการ์ด (Grid) --- */
-.card-container {
-    display: grid;
-    /* จัดเรียงอัตโนมัติ: การ์ดกว้างอย่างน้อย 250px ถ้าจอใหญ่ก็เพิ่มจำนวนคอลัมน์เอง */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px; /* ระยะห่างระหว่างการ์ด */
+.container {
     max-width: 1200px;
-    margin: 0 auto; /* จัดกึ่งกลางหน้าจอ */
-    padding: 10px;
+    margin: 0 auto;
 }
 
-/* --- ตัวการ์ด --- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
 .card {
     background-color: white;
-    border-radius: 15px; /* ขอบมน */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* เงาฟุ้งๆ */
-    padding: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     text-align: center;
-    transition: transform 0.3s; /* เอฟเฟกต์ตอนชี้ */
+    transition: transform 0.2s;
 }
 
 .card:hover {
-    transform: translateY(-10px); /* ลอยขึ้นเมื่อเอาเมาส์ชี้ */
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* รูปโปรไฟล์ */
 .profile-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; /* วงกลม */
-    object-fit: cover;
+    width: 180px;
+    height: 180px;
     margin-bottom: 15px;
-    border: 4px solid #4CAF50; /* ขอบสีเขียว */
+    border-radius: 8px;
 }
 
-/* ชื่อและเพศ */
-.card h3 {
-    margin: 10px 0 5px;
-    color: #333;
-    font-size: 22px;
-}
-
-.gender-text {
-    color: #777;
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-
-/* รายการคะแนน */
-.score-box {
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: left;
-}
-
-.score-item {
-    display: flex;
-    justify-content: space-between; /* ชื่อวิชาซ้าย คะแนนขวา */
-    margin-bottom: 8px;
-    font-size: 16px;
-    color: #555;
-    border-bottom: 1px dashed #ddd;
-    padding-bottom: 5px;
-}
-
-.score-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-}
-
-.score-val {
+.student-name {
+    font-size: 18px;
     font-weight: bold;
-    color: black; /* สีน้ำเงิน */
+    color: black;
+    margin-bottom: 15px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.score-list {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.8;
+    color: black;
+    margin-left: 10px;
+}
+
+.score-list span {
+    font-weight: normal;
+    color: black;
 }
