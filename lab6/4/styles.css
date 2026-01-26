@@ -1,1 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: "Sarabun", sans-serif;
+    background-color: #e3f2fd;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #1565c0;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #777;
+    margin-top: 0;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #2196f3;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-family: "Sarabunj", sans-serif;
+    transition: 0.2s;
+}
+
+.btn-add {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.btn-add:hover {
+    background-color: #43a047;
+}
+
+.btn-delete {
+    background-color: #ff5252;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.btn-delete:hover {
+    background-color: #d32f2f;
+}
+
+.btn-clear {
+    background-color: #607d8b;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.btn-clear:hover {
+    background-color: #455a64;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.movie-item {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.movie-item:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.movie-item:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: none;
+}
