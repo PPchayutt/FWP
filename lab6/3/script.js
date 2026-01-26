@@ -11,7 +11,6 @@ fetch("questionAnswerData.json")
 function displayQuiz(questions) {
     const container = document.getElementById("quiz-container");
     let html = "";
-
     questions.forEach((item, index) => {
         let answersHtml = "";
         for (let key in item.answers) {
@@ -24,7 +23,6 @@ function displayQuiz(questions) {
                 `;
             }
         }
-
         html += `
             <div class="question-box">
                 <div class="question-text">${index + 1}. ${item.question}</div>
@@ -32,6 +30,5 @@ function displayQuiz(questions) {
             </div>
         `;
     });
-
     container.innerHTML = html;
 }

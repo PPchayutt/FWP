@@ -2,7 +2,7 @@
 
 body {
     font-family: "Sarabun", sans-serif;
-    background-color: #e3f2fd;
+    background-color: whitesmoke;
     margin: 0;
     padding: 20px;
     display: flex;
@@ -20,19 +20,14 @@ body {
 }
 
 h1 {
-    color: #1565c0;
+    color: black;
     margin-bottom: 5px;
-}
-
-p {
-    color: #777;
-    margin-top: 0;
 }
 
 .input-group {
     display: flex;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 input {
@@ -42,17 +37,14 @@ input {
     border-radius: 5px;
     font-size: 16px;
     outline: none;
-}
-
-input:focus {
-    border-color: #2196f3;
+    margin-top: 25px;
 }
 
 button {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    font-family: "Sarabunj", sans-serif;
+    font-family: "Sarabun", sans-serif;
     transition: 0.2s;
 }
 
@@ -61,6 +53,7 @@ button {
     color: white;
     padding: 10px 20px;
     font-size: 16px;
+    margin-top: 25px;
 }
 
 .btn-add:hover {
@@ -83,7 +76,7 @@ button {
     color: white;
     padding: 10px 20px;
     width: 100%;
-    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 16px;
 }
 
@@ -108,13 +101,10 @@ ul {
     font-size: 18px;
 }
 
-.movie-item:first-child {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-.movie-item:last-child {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-bottom: none;
+.empty-message {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 16px;
 }

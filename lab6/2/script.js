@@ -1,18 +1,15 @@
 function createCards(students) {
     const container = document.getElementById("card-container");
     container.innerHTML = "";
-
     students.forEach((student, index) => {
         const card = document.createElement("div");
         card.className = "card";
-
         let imgSrc = "";
         if (student.gender === "Male") {
             imgSrc = "img/img_male.png";
         } else {
             imgSrc = "img/img_female.png";
         }
-
         card.innerHTML = `
             <img src="${imgSrc}" alt="Profile" class="profile-img">
             <div class="student-name">${index + 1}. ${student.name}</div>
@@ -23,7 +20,6 @@ function createCards(students) {
                 <div>English : <span>${student.english}</span></div>
             </div>
         `;
-
         container.appendChild(card);
     });
 }
