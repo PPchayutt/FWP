@@ -32,3 +32,25 @@ function displayQuiz(questions) {
     });
     container.innerHTML = html;
 }
+
+function checkAnswers() {
+    let score = 0;
+    const resultBox = document.getElementById("result");
+    allQuestions.forEach((item, index) => {
+        const selected = document.querySelector(`input[name="question${index}"]:checked`);
+        const allOptions = document.getElementsByName(`question${index}`);
+        allOptions.forEach(opt => opt.parentElement.style.color = "black");
+        if (selected) {
+            if (selected.value === item.answers.correct) {
+                score++;
+                selected.parentElement.style.color = "lightgreen";
+                selected.parentElement.style.fontWeight = "bold";
+            } else {
+                selected.parentElement.style.color = "red";
+            }
+        }
+    });
+    resultBox.innerHTML = `You got ${score} out of ${allQuestions.length} points!`;
+    resultBox.style.display = "block";
+    resultBox.scrollIntoView({ behavior: "smooth" });
+}
