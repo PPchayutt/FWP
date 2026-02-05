@@ -3,18 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=W, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Dogs Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header>
-        <img src="/img/panda-logo.png" width="300" alt="Hello Panda Web Programming">
-        <h1>About "Panda Web Programming"</h1>
-    </header>
-    <p>
-        Click <a href="http://localhost:3000">here</a> to go back.
-    </p>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/cat">Cats</a>
+        <a href="/dog">Dogs</a>
+        <a href="/bird">Birds</a>
+        <a href="/about">About</a>
+    </nav>
+    <h2>My Dogs Gallery</h2>
+    <div>
+        <figure style="display:inline-block;">
+            <img src="img/dog1.jpg" alt="dog1">
+            <figcaption>Mark</figcaption>
+        </figure>
+        <figure style="display:inline-block;">
+            <img src="img/dog2.jpg" alt="dog2">
+            <figcaption>Kark</figcaption>
+        </figure>
+    </div>
+    <p>Click <a href="/">here</a> to go back.</p>
 </body>
 
 </html>

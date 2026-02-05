@@ -13,6 +13,18 @@ app.get('/about', function (req, res) {
     res.sendFile(path.join(__dirname, '/public/about.html'));
 });
 
+app.get('/bird', function (req, res) {
+    res.sendFile(path.join(__dirname, '/public/bird.html'));
+});
+
+app.get('/cat', function (req, res) {
+    res.sendFile(path.join(__dirname, '/public/cat.html'));
+});
+
+app.get('/dog', function (req, res) {
+    res.sendFile(path.join(__dirname, '/public/dog.html'));
+});
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}, press Ctrl-C to terminate....`)
 })
