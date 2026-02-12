@@ -3,11 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Add Instructor</title>
 </head>
 
 <body>
+    <h2>Add New Instructor</h2>
+
+    <form action="/formget" method="GET">
+        ID: <input type="text" name="id" required> <br><br>
+        Name: <input type="text" name="name" required> <br><br>
+        Dept. Name: <input type="text" name="deptname"> <br><br>
+        Salary: <input type="text" name="salary"> <br><br>
+        <input type="submit" value="Submit">
+    </form>
 
 </body>
 

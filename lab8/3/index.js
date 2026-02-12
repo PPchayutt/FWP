@@ -1,30 +1,34 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require('express');
+const mysql = require('mysql2');
 const path = require('path');
+const app = express();
 
-app.use(express.static('public'));
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
-app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, '/public/home.html'));
+app.use(express.static(path.join(__dirname, 'public')));
+
+const db = mysql.createConnection({
+    host: 'webdev.it.kmitl.ac.th',
+    user: 's67070115',
+    password: 'ZNJ95XEF28B',
+    database: 's67070115'
 });
 
-app.get('/about', function (req, res) {
-    res.sendFile(path.join(__dirname, '/public/about.html'));
+db.connect((err) => {
+    if (err) throw err;
+    console.log('Connected to Database!');
 });
 
-app.get('/bird', function (req, res) {
-    res.sendFile(path.join(__dirname, '/public/bird.html'));
+app.get('/', (req, res) => {
+    const sql = 'SELECT * FROM albums';
+    db.query(sql, (err, results) => {
+        if (err) throw err;
+        res.render('albums', { albums: results });
+    });
 });
 
-app.get('/cat', function (req, res) {
-    res.sendFile(path.join(__dirname, '/public/cat.html'));
+const PORT = 3000;
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
 });
-
-app.get('/dog', function (req, res) {
-    res.sendFile(path.join(__dirname, '/public/dog.html'));
-});
-
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}, press Ctrl-C to terminate....`)
-})

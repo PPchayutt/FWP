@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ยินดีต้อนรับ, <%= user.firstname %>
+        </h1>
+        <hr>
+        <div style="text-align: left; margin-top: 20px;">
+            <p><strong>Username:</strong>
+                <%= user.username %>
+            </p>
+            <p><strong>Email:</strong>
+                <%= user.email %>
+            </p>
+            <p><strong>ชื่อ-นามสกุล:</strong>
+                <%= user.firstname %>
+                    <%= user.lastname %>
+            </p>
+            <p><strong>อายุ:</strong>
+                <%= user.age %>
+            </p>
+            <p><strong>เบอร์โทร:</strong>
+                <%= user.phone %>
+            </p>
+            <p><strong>ที่อยู่:</strong>
+                <%= user.address %>
+            </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="/login" class="link-btn" style="color: red;">ออกจากระบบ</a>
+        </div>
+    </div>
+</body>
+
+</html>

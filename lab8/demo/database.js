@@ -1,5 +1,6 @@
-// database.js
 const mysql = require('mysql2');
+
+// ตั้งค่าการเชื่อมต่อ
 const conn = mysql.createConnection({
     host: "webdev.it.kmitl.ac.th",
     user: "s67070115",
@@ -7,10 +8,11 @@ const conn = mysql.createConnection({
     database: "s67070115"
 });
 
-// open the MySQL connection
+// เชื่อมต่อ
 conn.connect(error => {
     if (error) throw error;
     console.log("Successfully connected to the database.");
 });
 
-module.exports = conn;c
+// ส่งออกตัวแปร conn ไปให้ไฟล์อื่นใช้
+module.exports = conn;

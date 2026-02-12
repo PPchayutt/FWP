@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The most popular albums</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>The most popular albums</h1>
+
+        <div class="album-grid">
+            <% albums.forEach(function(album) { %>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="<%= album.album_cover %>" alt="<%= album.song %>">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="song-title">
+                            <%= album.song %>
+                        </h2>
+
+                        <p class="info-line">
+                            <span class="label">Album:</span>
+                            <%= album.album %> (<%= album.year %>)
+                        </p>
+
+                        <p class="info-line">
+                            <span class="label">Artist:</span>
+                            <%= album.artist %>
+                        </p>
+
+                        <p class="info-line">
+                            <span class="label">Genre:</span>
+                            <%= album.genre %>
+                        </p>
+                    </div>
+                </div>
+                <% }); %>
+        </div>
+    </div>
+</body>
+
+</html>

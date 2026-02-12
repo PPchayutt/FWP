@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User Login</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>เข้าสู่ระบบ</h1>
+
+        <form action="/login-check" method="POST">
+            <div class="form-group">
+                <label>Username หรือ Email:</label>
+                <input type="text" name="identity">
+            </div>
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" name="password" required>
+            </div>
+
+            <button type="submit">เข้าสู่ระบบ</button>
+        </form>
+
+        <div style="text-align: center; margin-top: 15px;">
+            <a href="/" class="link-btn">ยังไม่มีบัญชี? ไปหน้าลงทะเบียน</a>
+        </div>
+    </div>
+</body>
+
+</html>
